@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<LangVersion>11</LangVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Authors>Fabian Schlüter</Authors>
+    <Description>A static class in C# to call your application with arguments like a pro</Description>
+    <Copyright>Copyright 2023 by Fabian Schlüter</Copyright>
+    <PackageProjectUrl>https://github.com/Fabian2000/ProfessionalArguments</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Fabian2000/ProfessionalArguments.git</RepositoryUrl>
+    <PackageTags>Option, CMD, Arguments, Library, Linux, Windows, Mac, MacOS, parsing, argument-parsing, utility</PackageTags>
+    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
