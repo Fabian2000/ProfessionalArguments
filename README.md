@@ -50,3 +50,17 @@ static void Main(string[] args)
     }
 }
 ```
+
+## Detail
+Option contains some Properties:
+```
+Name : string = The name of the option in the arguments. Has to be set by the developer.
+HasValue : bool = If this is true, the Builder-Method expect a value for this option in the arguments. Has to be set by the developer.
+Exists : bool = Useful, if you have to check, if an option was set. Even more useful, when it has no value in the arguments. Will be set by the Builder-Method.
+```
+
+Method:
+```
+Arguments.Build(option) = This builder reads the arguments and parses them into your options. There is no return value. It's all magic ;)
+GetType<type>() = Returns the value from the option. By setting the type, it will automatically convert the value to the matching type.
+```
